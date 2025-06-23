@@ -1,0 +1,162 @@
+body{
+    background: #282233e7;
+    
+    animation: background-color 5s infinite ;
+    
+}
+@keyframes background-color{
+    0%{
+        background-color:#6b5a87e7;
+    }
+    50%{background-color:#bc9eedfd;
+        
+    }
+    100%{
+    background-color:#ed7780fd;
+        
+    }
+}
+
+.profile{
+position: relative;
+    margin-top:700px;
+    margin-bottom: 600px;
+    padding: 300px;
+    background: white;
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+}
+
+
+
+img{
+    width:200px ;
+    height: 200px;
+    border-radius: 100px;
+    border:2px cyan solid;
+    position: absolute;
+    top: 60px;
+}
+
+.main{
+    position: absolute ;
+    bottom: 20px;
+    height:400px ;
+    width: 800px;
+    left:200px;
+    
+}
+.main::before{
+    content:"";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    background:#604c40c1 ;
+    border-radius: 20px 20px 0px 0px;
+}
+img.up{
+border-radius: 100px;
+    top: 5px;
+    left: 10px;
+    margin-left:20px;
+    width: 200px;
+    height: 200px;
+    position: absolute ;
+    animation:animated-border 5s infinite;
+}
+@keyframes animated-border{
+    0%{
+        border-color:#f8ff00;
+    }
+    50%{
+        border-color:#15cbff;
+    }
+    100%{
+        border-color:#b095ff;
+    }
+}
+
+.socials{
+    position: absolute;
+    display: grid ;
+    bottom: 5px;
+    margin-left: 100px;
+    grid-template-columns:200px 200px 200px;
+    grid-gap:20px;
+}
+#social-handle{
+    position: absolute;
+    display:relative;
+    top: 900px;
+    left:50%;
+}
+
+
+
+.name{
+    position: absolute;
+     left: 220px;
+     top:180px;
+}
+
+.contact{
+    position: absolute;
+    right: 8px;
+    top: 200px;
+    display:grid;
+    grid-template-columns:200px 200px;
+    grid-gap:20px;
+}
+
+.grid-item{
+    padding:10px;
+    background-color:368098FF;
+    text-align:center;
+    border-radius: 20px;
+    border: grey solid 2px;   
+}
+
+.dots{
+    background: #604c40c1;
+    width: 1090px;
+    height: 100px;
+    position: absolute;
+    top: 2px;
+    right: ;
+    left: 4px;
+    right: 4px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.icon{position: absolute;
+    right: 80px;
+    top: 30px;
+}
+
+p{
+    color: #ff9d2b;
+    font-weight:1000;
+    font-size:20px;
+    padding-top:-2px;
+    padding-left: 8px;
+}
+
+a{
+    color: #272e4ee7;
+    text-decoration:none;
+    cursor:crosshair;
+}
+a:hover{
+    color:#4e1a06e7;
+    text-decoration:underline;
+    
+}
+img:hover{
+    
+    opacity:0.3
+  ;
+  cursor:crosshair;
+}
